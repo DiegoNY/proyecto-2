@@ -77,6 +77,7 @@ body{
     font-weight: bold;
     /*definimos el margen*/
     margin-bottom: 4px;
+    
 }
 .input{
     /*colocamos color con las variables */
