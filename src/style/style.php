@@ -163,9 +163,14 @@ body{
 
 /*estilos para tabla */ 
 #contenedor-tabla{
-        position: absolute;
-        margin-top: 65px;
-        margin-left: 74px;
+        
+        margin-top: 140px;
+        
+        
+    }
+
+    .cont{
+        width: auto;
     }
     /* #mydatatable tfoot input {
         width: 100% !important;
