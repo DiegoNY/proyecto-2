@@ -163,22 +163,24 @@ body{
 
 /*estilos para tabla */ 
 #contenedor-tabla{
-        
-        margin-top: 140px;
-        
-        
+        margin-top: 80px;
     }
 
     .cont{
         width: auto;
     }
-    /* #mydatatable tfoot input {
-        width: 100% !important;
+    .conte{
+        margin-top: 141px;
+        position: relative;
     }
-
-    #mydatatable tfoot {
-        display: table-header-group !important;
-    } */
+    .nombre-flotante{
+        position: absolute ;
+        top: 5px;
+        left: 23px;
+        font-weight: bold;
+        z-index: 1;
+        padding: 15px;
+    }
     /*responsive*/
     @media(max-width:640px){
         
