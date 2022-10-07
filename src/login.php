@@ -10,5 +10,4 @@ $contacto = $sentencia->fetchAll(PDO::FETCH_OBJ);
 
 <?php include 'templates/login.php'?>
 
-
 <?php include 'templates/footer.php' ?>
