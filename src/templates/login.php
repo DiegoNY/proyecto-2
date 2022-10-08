@@ -37,11 +37,11 @@
 </div>
 <div class="login">
     <div class="form-container">
-        <form action="/" class="form">
+        <form action="validacionUsuario.php" class="form" method="POST">
             <label for="email" class="label">Usuario</label>
-            <input type="text" id="email" placeholder="email@example.com" class="input input-email">
+            <input type="text" id="email"  placeholder="email@example.com" class="input input-email" name="txtUsuario" autofocus>
             <label for="password" class="label">Contraseña</label>
-            <input type="password" id="pasword" placeholder="*********" class="input input-password">
+            <input type="password" id="pasword" placeholder="*********" class="input input-password" name="txtContraseña" autofocus>
             <input type="submit" value="Ingresar" class="primary-button login-button">
             <a href="/">Recuperar Contraseña</a>
         </form>

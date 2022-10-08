@@ -177,5 +177,25 @@ body{
     @media(max-width:640px){
         
     }
+    .logins {
+        width: 100%;
+        height: 78vh;
+        display: flex;
+        place-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .form-containers {
+        width: 570px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .cont-forms{
+       margin-bottom: 6px;
+       margin-left: 18px;
+    }
 
 </style>

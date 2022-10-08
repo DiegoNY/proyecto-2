@@ -20,25 +20,20 @@ $empresas = $sentencia->fetchAll(PDO::FETCH_OBJ);
                 <div class="card border-0 flex-fill w-100">
                     <div class="card-header border-0 card-header-space-between">
 
-                        <!-- Title -->
-                        <h2 class="card-header-title h4 text-uppercase" id="tit-emp">
-
-                        </h2>
-
+                    
                         <!-- Table -->
                         <div class="table-responsive">
-                            <table id="projectsTable" class="table align-middle table-edge table-nowrap mb-0">
+                            <table id="projectsTable" class="ui celled table responsive nowrap unstackable" style="width:100%">
                                 <thead class="thead-light">
                                     <tr>
-                                        <th>Nombre</th>
-                                        <th>Direccion</th>
-                                        <th>Razon Social</th>
-                                        <th>Ruc</th>
-                                        <th>Celular Contacto</th>
-                                        <th>Distrito</th>
-                                        <th>Provincia</th>
-                                        <th>Departamento</th>
-
+                                        <th scope="col">Nombre</th>
+                                        <th scope="col">Direccion</th>
+                                        <th scope="col">Razon Social</th>
+                                        <th scope="col">Ruc</th>
+                                        <th scope="col">Celular Contacto</th>
+                                        <th scope="col">Distrito</th>
+                                        <th scope="col">Provincia</th>
+                                        <th scope="col">Departamento</th>
                                     </tr>
                                 </thead>
                                 <tbody>
