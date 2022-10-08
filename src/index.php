@@ -22,27 +22,27 @@
     <div class="form-containers">
         <form action="/">
             <label for="email" class="label">Nombre</label>
-            <input type="text" id="email" placeholder="email@example.com" class="input input-email">
+            <input type="text" id="email" name="txtNombre" placeholder="EmpresaSAC..." class="input input-email">
             <label for="password" class="label">Direccion</label>
-            <input type="text" id="pasword" placeholder="Direccion" class="input input-password">
+            <input type="text" id="pasword" name="txtDireccion" placeholder="Direccion..." class="input input-password">
             <label for="email" class="label">Razon Social</label>
-            <input type="text" id="email" placeholder="Razon ... " class="input input-email">
+            <input type="text" id="email" name="txtRazonSocial" placeholder="Razon ..." class="input input-email">
             <label for="password" class="label">Ruc</label>
-            <input type="number" id="pasword" placeholder="123456789123" class="input input-password">
+            <input type="number" id="pasword" name="txtRuc" placeholder="123456789123" class="input input-password">
             <label for="email" class="label">Celular Empresa</label>
-            <input type="number" id="email" placeholder="91654936" class="input input-email">
+            <input type="number" id="email" name="txtCelularEmpresa" placeholder="916 540 936" class="input input-email">
             <!-- select -->
             <label for="password" class="label">Pais</label>
-            <input type="text" id="pasword" placeholder="" class="input input-password">
+            <input type="text" id="pasword" placeholder="PE" class="input input-password">
             <!-- combo box devuelve true o false si es true valor 1 si no valor 0-->
             <label for="email" class="label">Trabajara con nosotros ? </label>
             <label for="" class="labels" >si marca la casilla</label>
-            <input type="checkbox">
+            <input type="checkbox" name="txtTrabajaNosotros">
             <!-- Select -->
             <label for="password" class="label">Ingresa el codigo de Ubigeo</label>
-            <input type="text" id="pasword" placeholder="*********" class="input input-password">
+            <input type="text" id="pasword" name="txtCodUbigeo" placeholder="123456789123" class="input input-password">
             
-            <input type="submit" value="Ingresar" class="primary-button login-button">
+            <input type="submit" value="Registrar" class="primary-button login-button">
             
             <a href="/">volver</a>
             

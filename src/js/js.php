@@ -1,5 +1,5 @@
 <script >
-   
+   //manejo de dataTable
    $(document).ready(function() {
         $('#projectsTable').DataTable({
             scrollY: '280px',

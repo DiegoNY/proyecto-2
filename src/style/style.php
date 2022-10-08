@@ -108,7 +108,7 @@ body{
     /*colocamos color con las varables*/
     color: var(--white);
     /*colcando ancho ocupa el 100% de la caja*/
-    width: 100%;
+    width: 68%;
     /*muestra manita no flecho :o*/
     cursor: pointer;
     /*agrandamos la letra*/
@@ -117,6 +117,7 @@ body{
     font-weight: bold;
     /*le agregamos altura*/
     height: 50px;
+    margin-left: 42px;
 
 }
 .secondary-button{
@@ -127,31 +128,21 @@ body{
     border: 1px solid var(--hospital-green);
     /*colocamos color con las varables*/
     color: var(--hospital-green);
-    /*colcando ancho ocupa el 100% de la caja*/
+   
     width: 100%;
-    /*muestra manita no flecho :o*/
     cursor: pointer;
-    /*agrandamos la letra*/
     font-size: var(--md);
-    /*le colocamos un grosor :o*/
     font-weight: bold;
-    /*le agregamos altura*/
     height: 50px;
 
 }
 .login-button{
-    /*margen de alto*/
     top: 14px;
-    /*margen alrededor de las cajas*/
     margin-bottom: 30px;
 }
-/*responsive :o*/
-/*para que el logo aparezca cuando la pantalla sea menor a 640 px :o*/
+
 @media(max-width:640px){
-    /*desplegamos el logo para poder verlo*/
-    .logo{
-        display: block;
-    }
+   
     .secondary-button{
     /*para poder moverlo a gusto :p*/
     position: absolute;
