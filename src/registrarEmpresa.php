@@ -30,6 +30,5 @@ if($resultado == TRUE){
     exit();
 }
 
-$valor === "mostrar"
 
 ?>

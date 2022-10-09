@@ -2,7 +2,7 @@
 include_once 'connection/conexion.php';
 
 //obteniendo datos de la empresa 
-$sentencia = $bd->query("SELECT empresa.nombre,empresa.direccion,empresa.razon_social,empresa.ruc,empresa.celular_contacto from empresa where empresa.eliminada = 1");
+$sentencia = $bd->query("SELECT e.nombre,e.direccion,e.razon_social,e.ruc,e.celular_contacto from empresa as e where e.eliminada = 1");
 $empresas = $sentencia->fetchAll(PDO::FETCH_OBJ);
 // print_r($empresas);
 
