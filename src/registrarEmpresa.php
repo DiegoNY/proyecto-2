@@ -16,10 +16,7 @@ $codUbigeo = $_POST['txtCodUbigeo'];
 $eliminada = $_POST['txtEliminada'];
 $razonSocial = $_POST['txtRazonSocial'];
 $pais = $_POST['txtPais'];
-//checkbox retorna on transformando para poder ingresar estado [1=trabajando,2=posiblesClientes]
-if($trabaja === 'on'){
-     $trabaja = 1;
-}
+
 
 $sentencia = $bd->prepare("INSERT INTO empresa(nombre,direccion,razon_social,ruc,celular_contacto,pais,estado,eliminada)VALUE(?,?,?,?,?,?,?,?);");
 
@@ -32,5 +29,7 @@ if($resultado == TRUE){
     header('Location: index.php?mensaje=error');
     exit();
 }
+
+$valor === "mostrar"
 
 ?>

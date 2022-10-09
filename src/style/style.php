@@ -155,7 +155,7 @@ body{
 
 /*estilos para tabla */ 
 #contenedor-tabla{
-        margin-top: 80px;
+        margin-top: -120px;
     }
 
     .cont{
@@ -165,13 +165,14 @@ body{
         margin-top: 141px;
         position: relative;
     }
-    .nombre-flotante{
+    .cuadro-flotante{
         position: absolute ;
-        top: 5px;
+        top: -3px;
         left: 23px;
         font-weight: bold;
         z-index: 1;
         padding: 15px;
+       
     }
     /*responsive*/
     @media(max-width:640px){
@@ -197,5 +198,25 @@ body{
        margin-bottom: 6px;
        margin-left: 18px;
     }
+    .inactive{
+        display: none;
+    }
 
+    .btn-flotante{
+        position: absolute ;
+        top: -16px;
+        left: 23px;
+        font-weight: bold;
+        z-index: 1;
+        padding: 15px;
+    }
+    .btns{
+        left: 732px;
+        width: auto;
+        width: 347px;
+        display: flex;
+       
+    }
+   
+   
 </style>

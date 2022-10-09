@@ -2,7 +2,7 @@
    //manejo de dataTable
    $(document).ready(function() {
         $('#projectsTable').DataTable({
-            scrollY: '280px',
+            scrollY: '420px',
             scrollCollapse: true,
             paging: false,
             "language": {

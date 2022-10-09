@@ -33,7 +33,7 @@
             <div class="cont-forms">
                 <label for="email" class="label">Trabajara con nosotros ? </label>
                 <label for="" class="labels" >si marca la casilla</label>
-                <input type="checkbox" value="on"  name="txtTrabajaNosotros">
+                <input type="checkbox" value="1"  name="txtTrabajaNosotros">
             </div>
 
             <!-- Select -->
