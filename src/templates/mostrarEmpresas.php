@@ -1,12 +1,4 @@
-<?php
-include_once 'connection/conexion.php';
 
-//obteniendo datos de la empresa 
-$sentencia = $bd->query("SELECT e.nombre,e.direccion,e.razon_social,e.ruc,e.celular_contacto from empresa as e where e.eliminada = 1");
-$empresas = $sentencia->fetchAll(PDO::FETCH_OBJ);
-// print_r($empresas);
-
-?>
 <!-- estilos -->
 <?php include 'style/style.php'; ?>
 <!-- tabla -->
@@ -16,8 +8,9 @@ $empresas = $sentencia->fetchAll(PDO::FETCH_OBJ);
     </div>
 
     <div class="btn-flotante btns">
-        <input type="button" value="Clientes" class="primary-button login-button" >
-        <input type="button" value="Posibles Clientes" onclick="" class="primary-button login-button">
+        <input type="button" value="Clientes" class="primary-button login-button" onclick="location.href='verEmpresas.php?clientes'">
+        <input type="button" value="Posibles Clientes" onclick="location.href='verEmpresas.php?posiblesClientes'" class="primary-button login-button">
+        
     </div>
     <div class="container-fluid cont " id="contenedor-tabla">
         <div class="row">
@@ -44,7 +37,7 @@ $empresas = $sentencia->fetchAll(PDO::FETCH_OBJ);
                                 </thead>
                                 <tbody>
                                     <?php
-                                    foreach ($empresas as $datos) :
+                                    foreach ($empresas  as $datos) :
                                     ?>
                                         <tr>
                                             <td scope="row" class="border-secondary"><?php echo $datos->nombre; ?></td>
