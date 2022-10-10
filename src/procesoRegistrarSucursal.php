@@ -6,8 +6,8 @@ include_once 'connection/conexion.php';
 /**validando si los campos no estan vacios crear una funcion */
 
 if (empty($_POST["txtRucEmpresa"]) || empty($_POST["txtDireccionSucursal"]) || empty($_POST["txtNombreContacto"]) || empty($_POST["txtCelularContactoSucursal"]) || empty($_POST["txtCorreoSucursal"]) || empty($_POST["txtRazonSocial"])) {
-    //  header('Location: pantallaRegistraEmpresa.php?mensaje=faltanDatos');
-    //   exit();
+     header('Location: pantallaRegistraEmpresa.php?mensaje=faltanDatos');
+     exit();
 }
 
 /** 
