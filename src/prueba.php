@@ -1,20 +1,17 @@
 <?php
-  function accion(){
-    echo "accion";
-  }
-  function acciondos(){
-    echo 19;
-  }
-?>
 
-<input type="submit" name="" value="Buscar" id="boton1" onclick = "funcion();">
-<script>
-  function funcion(){
- const btn = document.querySelector("#boton1");
- 
- btn.addEventListener('click',mostrarEmpresas);
- function mostrarEmpresas(){
+class ClaseA
+{
+    public $prueba = "Esto es una propiedad";
+    
+    public function prueba() {
+        return "Esto es un método";
+    }
+}
+
+$a = new ClaseA;
+echo $a->prueba ; // Devuelve: Esto es una propiedad
+echo $a->prueba(); // Devuelve: Esto es un método
+
   
- }
-  }
-</script>
+

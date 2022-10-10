@@ -33,18 +33,22 @@
     <div class="container-fluid bg-warning">
         <nav class="navbar navbar-expand-lg navbar-light  py-4">
             <div class="container-fluid">
-                <a class="navbar-brand"  href="verEmpresas.php">Bienvenido👋</a>
+                <a class="navbar-brand"  href="verEmpresas.php?mensaje=Bienvenido">Bienvenido👋</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="registrarEmpresa.php">Ingresar Empresas</a>
+                            <a class="nav-link" href="pantallaRegistraEmpresa.php">Ingresar Empresas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="registrarContacto.php">Registrar Contacto de Empresa</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Salir</a>
                         </li>
+                        
                         <li class="nav-item inactive" >
                             <a class="nav-link" href="#">volver</a>
                         </li>
