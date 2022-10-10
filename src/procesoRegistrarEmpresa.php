@@ -23,13 +23,13 @@ $agregar = $bd->prepare("INSERT INTO empresa2(nombre,direccion,razon_social,ruc,
 
 $resultado = $agregar->execute([$nombre,$direccion,$razonSocial,$ruc,$celular,$pais,$trabaja,$eliminada]);
 
+
 if($resultado == TRUE){
-    header('Location: pantallaRegistraEmpresa.php?mensaje=registrada_ingresaSucursal');
+    header("Location: pantallaRegistrarSucursal.php?ruc=$ruc");
     exit();
 }else{
     header('Location: pantallaRegistraEmpresa.php?mensaje=error');
     exit();
 }
-
 
 ?>

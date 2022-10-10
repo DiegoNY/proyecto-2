@@ -33,6 +33,8 @@
                                         <th scope="col" class="border-secondary">Distrito</th>
                                         <th scope="col" class="border-secondary">Provincia</th>
                                         <th scope="col" class="border-secondary">Departamento</th>
+                                        <th scope="col" class="border-secondary">Sucursal</th>
+                                        <th scope="col" class="border-secondary">Contacto</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -48,6 +50,9 @@
                                             <td scope="row" class="border-secondary"> Lima</td>
                                             <td scope="row" class="border-secondary">Peru</td>
                                             <td scope="row" class="border-secondary">No se </td>
+                                            <td scope="row" class="border-secondary">ver sucursal</td>
+                                            <td scope="row" class="border-secondary">verContactos</td>
+                                            
                                         </tr>
                                     <?php endforeach; ?>
                                 </tbody>

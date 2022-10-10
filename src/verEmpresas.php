@@ -4,11 +4,11 @@ include_once 'connection/conexion.php';
 /**
  * Consultas a la base de datos seria mejor usando procedimientos almacenados
  */
-$consultaClientes = $bd->query("SELECT e.nombre,e.direccion,e.razon_social,e.ruc,e.celular_contacto from empresa2 as e where e.eliminada = 1 and e.estado = 1;");
+$consultaClientes = $bd->query("SELECT e.nombre,e.direccion,e.razon_social,e.ruc,e.celular_contacto,s.id_sucursal,c.id_contacto from empresa2 as e INNER JOIN sucursal as  s INNER JOIN contacto as c where e.eliminada = 1 and e.estado = 1;");
 
-$consultaPosiblesCli = $bd->query("SELECT  e.nombre,e.direccion,e.razon_social,e.ruc,e.celular_contacto from empresa2 as e where e.eliminada = 1 and e.estado = 0;"); 
+$consultaPosiblesCli = $bd->query("SELECT e.nombre,e.direccion,e.razon_social,e.ruc,e.celular_contacto,s.id_sucursal,c.id_contacto from empresa2 as e INNER JOIN sucursal as  s INNER JOIN contacto as c where e.eliminada = 1 and e.estado = 0;"); 
 
-$consultaTodasEmpresas = $bd->query("SELECT e.nombre,e.direccion,e.razon_social,e.ruc,e.celular_contacto from empresa2 as e where e.eliminada = 1");
+$consultaTodasEmpresas = $bd->query("SELECT e.nombre,e.direccion,e.razon_social,e.ruc,e.celular_contacto,s.id_sucursal,c.id_contacto from empresa2 as e INNER JOIN sucursal as  s INNER JOIN contacto as c where e.eliminada = 1;");
 /**
  * si esta  logueado se ven todas las empresas 
  */

@@ -1,17 +1,15 @@
 <?php
 
-class ClaseA
+class Empresa
 {
-    public $prueba = "Esto es una propiedad";
-    
-    public function prueba() {
-        return "Esto es un método";
-    }
+  public  $nombre;
+  public  $ruc ;
+  public $direccion;
+  public function __construct($nombre,$ruc,$direccion)
+  {
+    $this.$nombre = $nombre;
+    $this.$ruc = $ruc;
+    $this.$direccion = $direccion;
+  }
 }
-
-$a = new ClaseA;
-echo $a->prueba ; // Devuelve: Esto es una propiedad
-echo $a->prueba(); // Devuelve: Esto es un método
-
-  
 
