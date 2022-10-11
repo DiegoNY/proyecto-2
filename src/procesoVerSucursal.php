@@ -29,5 +29,6 @@ function validandoDatosVacios($ruc){
        $resultado = header('Location: pantallaVerContactos.php?mensaje=error');
        return $resultado;
     } 
+    
 }
 ?>

@@ -41,8 +41,8 @@
                                             <td scope="row" class="border-secondary"><?php echo $datos->celular; ?></td>
                                             <td scope="row" class="border-secondary"><?php echo $datos->correo; ?></td>
                                             <td scope="row" class="border-secondary"><?php echo $datos->ruc_empresa; ?></td>
-                                            <td scope="row" class="border-secondary"><a href="procesoBorrarSucursal.php?id=<?php echo $datos->id_sucursal ?>"><img class="img-sucursal-icons" src="img/icons8-delete.svg" alt="delete-icon"></a></td>
-                                            <td scope="row" class="border-secondary"><a href="procesoEditarSucursal.php?id=<?php echo $datos->id ?>"><i class="bi bi-person-rolodex"></i></a></td>
+                                            <td scope="row" class="border-secondary"><a href="procesoBorrarSucursal.php?id=<?php echo $datos->id_sucursal ?>&&ruc=<?php $ruc = $_GET['ruc']; echo $ruc;?>"><img class="img-sucursal-icons" src="img/icons8-delete.svg" alt="delete-icon"></a></td>
+                                            <td scope="row" class="border-secondary"><a href="procesoEditarSucursal.php?id=<?php echo $datos->id ?>&&ruc=<?php $ruc = $_GET['ruc']; echo $ruc;?>"><i class="bi bi-person-rolodex"></i></a></td>
                                         </tr>
                                     <?php endforeach; ?>
                                 </tbody>
