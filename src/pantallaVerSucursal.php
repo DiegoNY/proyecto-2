@@ -6,13 +6,13 @@
     </div>
 
     <div class="btn-flotante btns">
-        <input type="button" value="Ingresar Sucursal" class="primary-button login-button" onclick="location.href='pantallaRegistrarSucursal.php?ruc=<?php $ruc= $_GET['ruc']; echo $ruc; ?>'">
+        <input type="button" value="Ingresar Sucursal" class="primary-button login-button" onclick="location.href='pantallaRegistrarSucursal.php?ruc=<?php $ruc = $_GET['ruc'];echo $ruc; ?>'">
 
     </div>
 
     <div class="container-fluid cont " id="contenedor-tabla">
         <div class="row">
-            <div class="col-xxl-5 d-flex">
+            <div class="col-md-12 d-flex">
                 <!-- Card -->
                 <div class="card border-0 flex-fill w-100">
                     <div class="card-header border-0 card-header-space-between bg-transparent">
@@ -41,10 +41,10 @@
                                             <td scope="row" class="border-secondary"><?php echo $datos->correo; ?></td>
                                             <td scope="row" class="border-secondary"><?php echo $datos->ruc_empresa; ?></td>
                                             <!--Aqui esta el bug -->
-                                            <td scope="row" class="border-secondary"><a href="procesoBorrarSucursal.php?id=<?php echo $datos->id_sucursal ?>&&ruc=<?php $ruc = $_GET['ruc']; echo $ruc;?>"><img class="img-sucursal-icons" src="img/icons8-delete.svg" alt="delete-icon"></a></td>
+                                            <td scope="row" class="border-secondary text-center"><a href="procesoBorrarSucursal.php?id=<?php echo $datos->id_sucursal ?>&&ruc=<?php $ruc = $_GET['ruc'];echo $ruc; ?>"><img class="img-sucursal-icons" src="img/icons8-delete.svg" alt="delete-icon"></a></td>
 
-                                            
-                                            <td scope="row" class="border-secondary"><a href="procesoEditarSucursal.php?id=<?php echo $datos->id_sucursal ?>&&ruc=<?php $ruc = $_GET['ruc']; echo $ruc;?>"><img src="img/icons8-edit (2).svg" alt=""></a></td>
+
+                                            <td scope="row" class="border-secondary text-center"><a href="pantallaEditarSucursal.php?id=<?php echo $datos->id_sucursal ?>&&ruc=<?php $ruc = $_GET['ruc']; echo $ruc; ?>"><img src="img/icons8-edit (2).svg" alt=""></a></td>
                                         </tr>
                                     <?php endforeach; ?>
                                 </tbody>

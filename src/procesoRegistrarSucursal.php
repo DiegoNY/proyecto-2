@@ -11,33 +11,35 @@ $celular = $_POST["txtCelularContactoSucursal"];
 $nombreContacto = $_POST["txtNombreContacto"];
 $celularContacto = $_POST["txtCelularContacto"];
 $correoContacto = $_POST["txtCorreoContacto"];
+$eliminada = 1;
 
-validandoDatos($ruc,$direccion,$correo,$celular,$nombreContacto,$celularContacto,$correoContacto);
-
-//registrando sucursal 
-$agregar = $bd->prepare("INSERT INTO sucursal2(direccion,celular,correo,ruc_empresa)VALUE(?,?,?,?)");
-$resultado = $agregar->execute([$direccion, $celular, $correo, $ruc]);
-
-//registrando contacto
-$agregarContacto = $bd->prepare("INSERT INTO contacto(nombre,correo)VALUE(?,?)");
-$resultadaContacto = $agregarContacto->execute([$nombreContacto, $correoContacto]);
+validandoDatos($ruc, $direccion, $correo, $celular, $nombreContacto, $celularContacto, $correoContacto, $bd, $eliminada);
 
 
-if($resultado and $resultadaContacto === TRUE){
-    header("Location: pantallaRegistrarSucursal.php?mensaje=sucursalregistrada&&ruc=$ruc");
-    exit();
-}else{
-    header('Location: pantallaRegistrarSucursal.php?mensaje=error');
+function validandoDatos($ruc, $direccion, $correo, $celular, $nombreContacto, $celularContacto, $correoContacto, $bd, $eliminada)
+{
+    if (empty($ruc) || empty($correo) || empty($direccion) || empty($celular) || empty($nombreContacto) || empty($celularContacto) || empty($correoContacto)) {
+
+        $resultado = header('Location: pantallaRegistraEmpresa.php?mensaje=faltanDatos');
+        
+    } else {
+
+
+        //registrando sucursal 
+        $agregar = $bd->prepare("INSERT INTO sucursal2(direccion,celular,correo,ruc_empresa,eliminada)VALUE(?,?,?,?,?)");
+        $resultado = $agregar->execute([$direccion, $celular, $correo, $ruc, $eliminada]);
+
+        //registrando contacto
+        $agregarContacto = $bd->prepare("INSERT INTO contacto(nombre,correo)VALUE(?,?)");
+        $resultadaContacto = $agregarContacto->execute([$nombreContacto, $correoContacto]);
+
+
+        if ($resultado and $resultadaContacto === TRUE) {
+            header("Location: pantallaRegistrarSucursal.php?mensaje=sucursalregistrada&&ruc=$ruc");
+            exit();
+        } else {
+            header('Location: pantallaRegistrarSucursal.php?mensaje=error');
+        }
+    }
+    return $resultado;
 }
-
-
-
-
-function validandoDatos($ruc,$direccion,$correo,$celular,$nombreContacto,$celularContacto,$correoContacto ){
-    if (empty($ruc) || empty($correo)||empty($direccion) || empty($celular) || empty($nombreContacto) || empty($celularContacto) || empty($correoContacto)){
-        $volver = header('Location: pantallaRegistraEmpresa.php?mensaje=faltanDatos');
-   }
-   return $volver;
-}
-?>
-

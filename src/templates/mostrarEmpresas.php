@@ -2,6 +2,7 @@
 <?php include 'style/style.php'; ?>
 <!-- tabla -->
 <div class="conte">
+   
     <div class="cuadro-flotante">
         <div class="nom">Empresas</div>
     </div>
@@ -13,16 +14,16 @@
     </div>
     <div class="container-fluid cont " id="contenedor-tabla">
         <div class="row">
-            <div class="col-xxl-5 d-flex">
+            <div class="col-md-12 d-flex">
                 <!-- Card -->
                 <div class="card border-0 flex-fill w-100">
                     <div class="card-header border-0 card-header-space-between bg-transparent">
 
 
                         <!-- Table -->
-                        <div class="table-responsive">
-                            <table id="projectsTable" class="table  table-bordered border border-secondary " style="width:100%">
-                                <thead class="">
+                        <div class="table-responsive col-md-12">
+                            <table id="projectsTable" class="table   table-hover " style="width:100%">
+                                <thead class="bg-info text-white text-center">
                                     <tr>
                                         <th scope="col" class="border-secondary">Nombre</th>
                                         <th scope="col" class="border-secondary">Direccion</th>
@@ -51,10 +52,10 @@
                                             <td scope="row" class="border-secondary">Peru</td>
                                             <td scope="row" class="border-secondary">No se </td>
                                             
-                                            <td scope="" class="border-secondary "><a href="pantallaVerSucursal.php?ruc=<?php echo $datos->ruc ?>"><i class="bi bi-book"></i></a></td>
-                                            <td scope="" class="border-secondary "><a href="pantallaVerContactos.php?ruc=<?php echo $datos->ruc ?>"><i class="bi bi-person-rolodex"></i></a></td>
+                                            <td scope="" class="border-secondary text-center"><a href="pantallaVerSucursal.php?ruc=<?php echo $datos->ruc ?>"><i class="bi bi-book text-primary"></i></a></td>
+                                            <td scope="" class="border-secondary text-center"><a href="pantallaVerContactos.php?ruc=<?php echo $datos->ruc ?>"><i class="bi bi-person-rolodex text-success"></i></a></td>
                                             
-                                            <td scope="row" class="border-secondary" ><a href="procesoEliminarEmpresa.php?ruc=<?php echo $datos->ruc ?>"><img src="" alt="eliminar_empresas"></a></td>
+                                            <td scope="row" class="border-secondary text-center" ><a href="procesoEliminarEmpresa.php?ruc=<?php echo $datos->ruc ?>"><i class="bi bi-trash text-danger "></i></a></td>
                                         </tr>
                                     <?php endforeach; ?>
                                 </tbody>
