@@ -32,7 +32,7 @@ if($resultado == TRUE){
 
 function validandoDatos($direccion,$celular,$nombre,$codUbigeo,$eliminada,$razonSocial,$pais)
 {
-    if(empty($direccion)|| empty($celular)||empty($nombre)||empty($codUbigeo)||empty($eliminada)||empty($razonSocial)||empty($pais)){
+    if(empty($trabaja)||empty($direccion)|| empty($celular)||empty($nombre)||empty($codUbigeo)||empty($eliminada)||empty($razonSocial)||empty($pais)){
         $volver =  header('Location: pantallaRegistraEmpresa.php?mensaje=faltanDatos');
     }
     return $volver;

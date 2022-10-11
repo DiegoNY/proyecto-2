@@ -43,7 +43,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="pantallaRegistraEmpresa.php">Ingresar Empresas</a>
+                            <a class="nav-link" href="pantallaRegistraEmpresa.php?mensaje=registrar">Ingresar Empresas</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Salir</a>

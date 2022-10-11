@@ -5,7 +5,7 @@
     <div class="cuadro-flotante">
         <div class="nom">Empresas</div>
     </div>
-
+    
     <div class="btn-flotante btns">
         <input type="button" value="Clientes" class="primary-button login-button" onclick="location.href='verEmpresas.php?clientes'">
         <input type="button" value="Posibles Clientes" onclick="location.href='verEmpresas.php?posiblesClientes'" class="primary-button login-button">
