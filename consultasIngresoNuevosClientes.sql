@@ -26,3 +26,4 @@ update empresa set nombre="Diego",direccion="",razon_social="",ruc="",celular_co
 -- ingresar sucursa
 INSERT sucursal(direccion,correo,celular,nombre,id_empresa) VALUES('direccion','celular',)
 
+SELECT * from sucursal2 JOIN empresa2 as e WHERE (sucursal2.ruc_empresa = e.ruc and e.eliminada = 1);

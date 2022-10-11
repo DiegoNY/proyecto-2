@@ -1,4 +1,3 @@
-
 <!-- estilos -->
 <?php include 'style/style.php'; ?>
 <!-- tabla -->
@@ -10,7 +9,7 @@
     <div class="btn-flotante btns">
         <input type="button" value="Clientes" class="primary-button login-button" onclick="location.href='verEmpresas.php?clientes'">
         <input type="button" value="Posibles Clientes" onclick="location.href='verEmpresas.php?posiblesClientes'" class="primary-button login-button">
-        
+
     </div>
     <div class="container-fluid cont " id="contenedor-tabla">
         <div class="row">
@@ -50,9 +49,8 @@
                                             <td scope="row" class="border-secondary"> Lima</td>
                                             <td scope="row" class="border-secondary">Peru</td>
                                             <td scope="row" class="border-secondary">No se </td>
-                                            <td scope="row" class="border-secondary">ver sucursal</td>
-                                            <td scope="row" class="border-secondary">verContactos</td>
-                                            
+                                            <td scope="" class="border-secondary"><a href="pantallaVerSucursal.php?ruc=<?php echo $datos->ruc ?>"><i class="bi bi-book"></i></a></td>
+                                            <td scope="" class="border-secondary"><a href="pantallaVerContactos.php?ruc=<?php echo $datos->ruc ?>"><i class="bi bi-person-rolodex"></i></a></td>
                                         </tr>
                                     <?php endforeach; ?>
                                 </tbody>

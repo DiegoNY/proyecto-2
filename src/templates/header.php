@@ -26,6 +26,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <!--Icons Boostrap 5-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
     
 </head>
 
@@ -41,9 +44,6 @@
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link" href="pantallaRegistraEmpresa.php">Ingresar Empresas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="registrarContacto.php">Registrar Contacto de Empresa</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Salir</a>
