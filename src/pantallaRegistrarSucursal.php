@@ -32,12 +32,13 @@
                 <input type="number" id="celular-contacto" name="txtCelularContacto" placeholder="999 999 999" class="input input-password">
             </div>
             <!-- Select -->
-            
+
             <input type="hidden" name="txtRuc" value="<?php //obteniendo el ruc y enviandolo por post 
-             $ruc= $_GET['ruc']; echo $ruc;?>" id="">
+                                                        $ruc = $_GET['ruc'];
+                                                        echo $ruc; ?>" id="">
 
             <input type="submit" value="Registrar" id="btn-registrar-sucursal" class="primary-button btn-form">
-        
+
         </form>
     </div>
 </div>

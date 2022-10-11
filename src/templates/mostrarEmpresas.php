@@ -3,7 +3,8 @@
 <!-- tabla -->
 <div class="conte">
    
-    <div class="cuadro-flotante">
+<div class="cuadro-flotantes">
+     <div class="cuadro">
         <div class="nom">Empresas</div>
     </div>
     
@@ -12,6 +13,8 @@
         <input type="button" value="Posibles Clientes" onclick="location.href='verEmpresas.php?posiblesClientes'" class="primary-button login-button">
 
     </div>
+</div>
+   
     <div class="container-fluid cont " id="contenedor-tabla">
         <div class="row">
             <div class="col-md-12 d-flex">

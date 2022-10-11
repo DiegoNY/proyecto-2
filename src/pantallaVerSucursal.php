@@ -20,7 +20,7 @@
 
                         <!-- Table -->
                         <div class="table-responsive">
-                            <table id="projectsTable" class="table  table-bordered border border-secondary " style="width:100%">
+                            <table id="projectsTable" class="table  table-bordered table-hover border border-secondary " style="width:100%">
                                 <thead class="">
                                     <tr>
                                         <th scope="col" class="border-secondary">Direccion</th>
