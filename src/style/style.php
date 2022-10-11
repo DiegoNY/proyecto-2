@@ -247,4 +247,5 @@
         margin-bottom: 30px;
         margin-left: 126px;
     }
+    
 </style>

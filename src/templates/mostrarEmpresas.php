@@ -34,6 +34,7 @@
                                         <th scope="col" class="border-secondary">Departamento</th>
                                         <th scope="col" class="border-secondary">Sucursal</th>
                                         <th scope="col" class="border-secondary">Contacto</th>
+                                        <th scope="col" class="border-secondary">Eliminar</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -49,8 +50,11 @@
                                             <td scope="row" class="border-secondary"> Lima</td>
                                             <td scope="row" class="border-secondary">Peru</td>
                                             <td scope="row" class="border-secondary">No se </td>
-                                            <td scope="" class="border-secondary"><a href="pantallaVerSucursal.php?ruc=<?php echo $datos->ruc ?>"><i class="bi bi-book"></i></a></td>
-                                            <td scope="" class="border-secondary"><a href="pantallaVerContactos.php?ruc=<?php echo $datos->ruc ?>"><i class="bi bi-person-rolodex"></i></a></td>
+                                            
+                                            <td scope="" class="border-secondary "><a href="pantallaVerSucursal.php?ruc=<?php echo $datos->ruc ?>"><i class="bi bi-book"></i></a></td>
+                                            <td scope="" class="border-secondary "><a href="pantallaVerContactos.php?ruc=<?php echo $datos->ruc ?>"><i class="bi bi-person-rolodex"></i></a></td>
+                                            
+                                            <td scope="row" class="border-secondary" ><a href="procesoEliminarEmpresa.php?ruc=<?php echo $datos->ruc ?>"><img src="" alt="eliminar_empresas"></a></td>
                                         </tr>
                                     <?php endforeach; ?>
                                 </tbody>

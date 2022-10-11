@@ -6,8 +6,7 @@
     </div>
 
     <div class="btn-flotante btns">
-        <input type="button" value="Ingresar Sucursal" class="primary-button login-button" onclick="location.href='pantallaRegistrarSucursal.php?ruc=<?php $ruc= $_GET['ruc']; echo $ruc; ?>'"
-        <input type="button" value="" onclick="location.href='verEmpresas.php?posiblesClientes'" class="primary-button login-button">
+        <input type="button" value="Ingresar Sucursal" class="primary-button login-button" onclick="location.href='pantallaRegistrarSucursal.php?ruc=<?php $ruc= $_GET['ruc']; echo $ruc; ?>'">
 
     </div>
 
@@ -34,15 +33,18 @@
                                 </thead>
                                 <tbody>
                                     <?php
-                                    foreach ($sucursal  as $datos) :
+                                    foreach ($resultado  as $datos) :
                                     ?>
                                         <tr>
                                             <td scope="row" class="border-secondary"><?php echo $datos->direccion; ?></td>
                                             <td scope="row" class="border-secondary"><?php echo $datos->celular; ?></td>
                                             <td scope="row" class="border-secondary"><?php echo $datos->correo; ?></td>
                                             <td scope="row" class="border-secondary"><?php echo $datos->ruc_empresa; ?></td>
+                                            <!--Aqui esta el bug -->
                                             <td scope="row" class="border-secondary"><a href="procesoBorrarSucursal.php?id=<?php echo $datos->id_sucursal ?>&&ruc=<?php $ruc = $_GET['ruc']; echo $ruc;?>"><img class="img-sucursal-icons" src="img/icons8-delete.svg" alt="delete-icon"></a></td>
-                                            <td scope="row" class="border-secondary"><a href="procesoEditarSucursal.php?id=<?php echo $datos->id ?>&&ruc=<?php $ruc = $_GET['ruc']; echo $ruc;?>"><i class="bi bi-person-rolodex"></i></a></td>
+
+                                            
+                                            <td scope="row" class="border-secondary"><a href="procesoEditarSucursal.php?id=<?php echo $datos->id_sucursal ?>&&ruc=<?php $ruc = $_GET['ruc']; echo $ruc;?>"><img src="img/icons8-edit (2).svg" alt=""></a></td>
                                         </tr>
                                     <?php endforeach; ?>
                                 </tbody>

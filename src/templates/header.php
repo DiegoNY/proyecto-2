@@ -45,7 +45,7 @@
                             <a class="nav-link" href="pantallaRegistraEmpresa.php?mensaje=faltanDatos">Ingresar Empresas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Salir</a>
+                            <a class="nav-link" href="login.php">Salir</a>
                         </li>
 
                         <li class="nav-item inactive">
