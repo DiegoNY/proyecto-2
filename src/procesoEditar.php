@@ -17,10 +17,7 @@ $eliminada = $_POST['txtEliminada'];
 $razonSocial = $_POST['txtRazonSocial'];
 $pais = $_POST['txtPais'];
 $id_empresa = $_POST['txtId'];
-//checkbox retorna on transformando para poder ingresar estado [1=trabajando,2=posiblesClientes]
-// if($trabaja === 'on'){
-//      $trabaja = 1;
-// }
+
 
 $sentencia = $bd->prepare("UPDATE  empresa SET nombre = ? ,direccion = ?,razon_social = ?,ruc = ?,celular_contacto = ?,pais = ?,estado= ?,eliminada= ? where id_empresa = ?;");
 
