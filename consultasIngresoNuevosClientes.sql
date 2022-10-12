@@ -29,4 +29,4 @@ INSERT sucursal(direccion,correo,celular,nombre,id_empresa) VALUES('direccion','
 SELECT s.correo,s.direccion,s.ruc_empresa from sucursal2 as s inner JOIN empresa2 as e WHERE (s.ruc_empresa = e.ruc
 and e.eliminada = 1);
 
-UPDATE sucursal2 SET eliminada = 0 where id = ;
+UPDATE sucursal2 SET eliminada = 0 where(id_sucursal = 67);

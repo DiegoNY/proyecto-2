@@ -36,6 +36,6 @@ $consultaTodasEmpresas = $bd->query("SELECT e.nombre,e.direccion,e.razon_social,
 
 <?php include 'templates/header.php' ?>
 
-<?php include 'templates/mostrarEmpresas.php'?>
+<?php include 'Prueba.php'?>
 <!-- script -->
 <?php include 'js/js.php'; ?>

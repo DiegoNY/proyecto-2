@@ -1,20 +1,21 @@
 <!-- estilos -->
 <?php include 'style/style.php'; ?>
 <!-- tabla -->
-<div class="conte">
-   
-<div class="cuadro-flotantes">
-     <div class="cuadro">
-        <div class="nom">Empresas</div>
-    </div>
-    
-    <div class="btn-flotante btns">
-        <input type="button" value="Clientes" class="primary-button login-button" onclick="location.href='verEmpresas.php?clientes'">
-        <input type="button" value="Posibles Clientes" onclick="location.href='verEmpresas.php?posiblesClientes'" class="primary-button login-button">
 
+<div class="cuadro-flotantes">
+        <div class="cuadro">
+            <div class="nom">Empresas</div>
+        </div>
+
+        <div class="btn-flotante btns">
+            <input type="button" value="Clientes" class="primary-button login-button" onclick="location.href='verEmpresas.php?clientes'">
+            <input type="button" value="Posibles Clientes" onclick="location.href='verEmpresas.php?posiblesClientes'" class="primary-button login-button">
+
+        </div>
     </div>
-</div>
-   
+
+<div class="conte">
+
     <div class="container-fluid cont " id="contenedor-tabla">
         <div class="row">
             <div class="col-md-12 d-flex">
@@ -54,11 +55,11 @@
                                             <td scope="row" class="border-secondary"> Lima</td>
                                             <td scope="row" class="border-secondary">Peru</td>
                                             <td scope="row" class="border-secondary">No se </td>
-                                            
+
                                             <td scope="" class="border-secondary text-center"><a href="pantallaVerSucursal.php?ruc=<?php echo $datos->ruc ?>"><i class="bi bi-book text-primary"></i></a></td>
                                             <td scope="" class="border-secondary text-center"><a href="pantallaVerContactos.php?ruc=<?php echo $datos->ruc ?>"><i class="bi bi-person-rolodex text-success"></i></a></td>
-                                            
-                                            <td scope="row" class="border-secondary text-center" ><a href="procesoEliminarEmpresa.php?ruc=<?php echo $datos->ruc ?>"><i class="bi bi-trash text-danger "></i></a></td>
+
+                                            <td scope="row" class="border-secondary text-center"><a href="procesoEliminarEmpresa.php?ruc=<?php echo $datos->ruc ?>"><i class="bi bi-trash text-danger "></i></a></td>
                                         </tr>
                                     <?php endforeach; ?>
                                 </tbody>

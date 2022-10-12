@@ -219,18 +219,13 @@
     }
 
     .btn-flotante {
-        position: absolute;
-        top: -16px;
-        left: 23px;
+       
         font-weight: bold;
-        z-index: 1;
-        padding: 15px;
+       
     }
 
     .btns {
-        left: 732px;
-        width: auto;
-        width: 347px;
+        
         display: flex;
 
     }
@@ -247,5 +242,16 @@
         margin-bottom: 30px;
         margin-left: 126px;
     }
-    .opciones{}
+
+    .cuadro-flotantes {
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        grid-gap: 15px; 
+        
+    }
+    .cuadro{
+        width: 100%;
+        
+    }
 </style>
