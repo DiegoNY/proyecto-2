@@ -16,7 +16,7 @@ $consultaTodasEmpresas = $bd->query("SELECT e.nombre,e.direccion,e.razon_social,
  switch (true) {
     case isset($_GET['mensaje']) and $_GET['mensaje']=='Bienvenido':
         $empresas = $consultaTodasEmpresas->fetchAll(PDO::FETCH_OBJ);
-        break;
+        break;  
     case isset($_GET['clientes']) :
         $empresas = $consultaClientes->fetchAll(PDO::FETCH_OBJ);
         break;
@@ -29,11 +29,10 @@ $consultaTodasEmpresas = $bd->query("SELECT e.nombre,e.direccion,e.razon_social,
  }
    
 
-
 ?>
 
 <!--Cabecera-->
-
+ 
 <?php include 'templates/header.php' ?>
 
 <?php include 'Prueba.php'?>

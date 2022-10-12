@@ -81,8 +81,10 @@
                 <td><?php echo $data->direccion; ?></td>
                 <td><?php echo $data->ruc_empresa ?></td>
                 <td> Eliminar </td>
-                <td>2011-04-25</td>
-                <td>$320,800</td>
+                <td scope="row" class="border-secondary text-center"><a href="procesoBorrarSucursal.php?id=<?php echo $datos->id_sucursal ?>&&ruc=<?php $ruc = $_GET['ruc'];
+                                                                                                                                                  echo $ruc; ?>"><img class="img-sucursal-icons" src="img/icons8-delete.svg" alt="delete-icon"></a></td>
+                 <td scope="row" class="border-secondary text-center"><a href="pantallaEditarSucursal.php?id=<?php echo $datos->id_sucursal ?>&&ruc=<?php $ruc = $_GET['ruc'];
+                                                                                                                                                                                echo $ruc; ?>"><img src="img/icons8-edit (2).svg" alt=""></a></td>
               </tr>
             <?php
             endforeach;
@@ -522,5 +524,8 @@
     width: 100%;
 
   }
+  
 </style>
-<script></script>
+<script>
+
+</script>
