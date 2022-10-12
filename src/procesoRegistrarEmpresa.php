@@ -33,9 +33,9 @@ function validandoDatos($direccion, $celular, $nombre, $codUbigeo, $eliminada, $
 
 
         if ($resultado == TRUE) {
-            $volver = header("Location: pantallaRegistrarSucursal.php?ruc=$ruc");
+            $volver = header("Location: verEmpresas.php?mensaje=Bienvenido&&ruc=$ruc");
         } else {
-            $volver = header('Location: pantallaRegistraEmpresa.php?mensaje=error');
+            $volver = header('Location: Prueba.php?mensaje=Bienvenido&&mensaje=error');
         }
     }
     return $volver;

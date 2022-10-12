@@ -35,7 +35,7 @@
     <div class="container-fluid bg-warning">
         <nav class="navbar navbar-expand-lg navbar-light  py-4">
             <div class="container-fluid">
-                <a class="navbar-brand" href="verEmpresas.php?mensaje=Bienvenido">Bienvenido👋</a>
+                <a class="navbar-brand" href="verEmpresas.php?mensaje=Bienvenido&&ruc=21421">Bienvenido👋</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>

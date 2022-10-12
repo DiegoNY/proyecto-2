@@ -2,7 +2,7 @@
 <?php
     
     include 'connection/conexion.php';
-    $ruc = $_GET['ruc'];
+    $ruc = $_POST['ruc'];
 
     validandoDatosVacios($ruc);
 

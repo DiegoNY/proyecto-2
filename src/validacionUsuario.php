@@ -12,7 +12,7 @@ $consulta = $bd->prepare('SELECT * FROM usuarios where nombre = ? and correo = ?
 $respuesta = $consulta->execute([$usuario,$contraseña]);
 
 if($consulta->rowCount()>=1){
-    header('Location: /proyecto-2/src/verEmpresas.php?mensaje=Bienvenido');
+    header('Location: /proyecto-2/src/verEmpresas.php?mensaje=Bienvenido&&ruc=21421');
 }else{
     header('Location: /proyecto-2/src/login.php?mensaje=datosInvalidos');
     exit();
