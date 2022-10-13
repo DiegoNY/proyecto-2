@@ -23,8 +23,6 @@ function validandoDatos($ruc, $direccion, $correo, $celular, $nombreContacto, $c
         $resultado = header('Location: pantallaRegistraEmpresa.php?mensaje=faltanDatos');
         
     } else {
-
-
         //registrando sucursal 
         $agregar = $bd->prepare("INSERT INTO sucursal2(direccion,celular,correo,ruc_empresa,eliminada)VALUE(?,?,?,?,?)");
         $resultado = $agregar->execute([$direccion, $celular, $correo, $ruc, $eliminada]);

@@ -28,15 +28,16 @@ $output = array(
 
 $i = 0;
 while($resultado = $consulta->fetchAll(PDO::FETCH_OBJ))
-{
+{   
+
     $row = array();
 
     $row[] = $resultado[$i]->nombre;
     $row[] = $resultado[$i]->direccion;
     $row[] = $resultado[$i]->ruc_empresa;
-    $row[] = $resultado[$i]->direccion;
-    $row[] = $resultado[$i]->direccion;
-    $row[] = '';
+    $row[] = $resultado[$i]->id_sucursal;
+    $row[] = $resultado[$i]='<i onclick="CargarContactos()"><img  src="img/icons8-edit (2).svg" class="img-table text-center" alt=""></i>';
+    $row[] = $resultado[$i]='';
     $output['aaData'][] = $row;
      
     $i++;

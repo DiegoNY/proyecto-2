@@ -45,9 +45,8 @@
             <input type="hidden" name="txtEliminada" value="1">
 
             <input type="submit" value="Registrar" id="btn-registrar" class="primary-button btn-form">
-            
+
 
         </form>
     </div>
 </div>
-

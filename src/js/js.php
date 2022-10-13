@@ -1,41 +1,57 @@
 <script>
     //tabla Prueba
-    
-   
+
+
     $(document).ready(function() {
         tsucursal = $('#sucursal').DataTable({
-            "sAjaxSource":"sucursales.php?ruc=0",
+            "sAjaxSource": "sucursales.php?ruc=0",
             scrollY: '420px',
             scrollCollapse: true,
             paging: true,
-            "language":{
-               "url": "https://cdn.datatables.net/plug-ins/1.10.19/i18n/Spanish.json"
+            "language": {
+                "url": "https://cdn.datatables.net/plug-ins/1.10.19/i18n/Spanish.json"
             },
-            "dom":'<"toolbar">Bftrp'
+            "dom": '<"toolbar">Bftrp'
+        });
+    });
+    $(document).ready(function() {
+        tsucursal = $('#contactos').DataTable({
+            "sAjaxSource": "verContactos.php?ruc=0",
+            scrollY: '420px',
+            scrollCollapse: true,
+            paging: true,
+            "language": {
+                "url": "https://cdn.datatables.net/plug-ins/1.10.19/i18n/Spanish.json"
+            },
+            "dom": '<"toolbar">Bftrp'
         });
     });
 
     $(document).ready(function() {
-        $('#empresa').DataTable({  scrollY: '420px',
+        $('#empresa').DataTable({
+            scrollY: '420px',
             scrollCollapse: true,
             paging: true,
-            "language":{
-               "url": "https://cdn.datatables.net/plug-ins/1.10.19/i18n/Spanish.json"
+            "language": {
+                "url": "https://cdn.datatables.net/plug-ins/1.10.19/i18n/Spanish.json"
             },
-            "dom":'<"toolbar">Bftrp'
+            "dom": '<"toolbar">Bftrp'
         });
-    }); 
+    });
 
-    function CargarSucursal(ruc)
-    {
+    function CargarSucursal(ruc) {
         tsucursal.destroy();
         tsucursal = $('#sucursal').DataTable({
-            "sAjaxSource":"sucursales.php?ruc="+ruc
+            "sAjaxSource": "sucursales.php?ruc=" + ruc
         });
     }
-    function EliminarEmpresa(ruc){
-        tsucursal = $('#sucursal').DataTable({
-            "sAjaxSource":"eliminarSucursal.php?ruc="
+
+    function CargarContactos(ruc) {
+        tcontactos.destroy();
+        tcontactos = $('#contactos').DataTable({
+            "sAjaxSource": "verContactos.php?ruc=" + ruc
         });
     }
+
+   
 </script>
