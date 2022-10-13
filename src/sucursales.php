@@ -12,9 +12,7 @@ extract($_GET);
  * */
 $consulta = $bd->query("SELECT s.nombre, s.id_sucursal,s.direccion,s.correo,s.celular,s.ruc_empresa FROM  sucursal2 as s  WHERE s.ruc_empresa = $ruc  and s.eliminada = 1;");
 
-
 /**
- * 
  * Creando la dataTable para que se pueda instanciar y ver sin necesidad de enviar los parametros por url  
  */
 

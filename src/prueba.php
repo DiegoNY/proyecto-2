@@ -1,4 +1,3 @@
-<?php include 'procesoVerSucursal.php' ?>
 <main>
   <div class="btn-menu-tablas">
 
@@ -73,22 +72,7 @@
             </tr>
           </thead>
           <tbody>
-            <?php
-            foreach ($resultado as $data) :
-            ?>
-              <tr> 
-                <td><?php echo $data->nombre; ?></td>
-                <td><?php echo $data->direccion; ?></td>
-                <td><?php echo $data->ruc_empresa ?></td>
-                <td> Eliminar </td>
-                <td scope="row" class="border-secondary text-center"><a href="procesoBorrarSucursal.php?id=<?php echo $datos->id_sucursal ?>&&ruc=<?php $ruc = $_GET['ruc'];
-                                                                                                                                                  echo $ruc; ?>"><img class="img-sucursal-icons" src="img/icons8-delete.svg" alt="delete-icon"></a></td>
-                 <td scope="row" class="border-secondary text-center"><a href="pantallaEditarSucursal.php?id=<?php echo $datos->id_sucursal ?>&&ruc=<?php $ruc = $_GET['ruc'];
-                                                                                                                                                                                echo $ruc; ?>"><img src="img/icons8-edit (2).svg" alt=""></a></td>
-              </tr>
-            <?php
-            endforeach;
-            ?>
+           <!-- Data en Ajax-->
           </tbody>
           <tfoot>
             <tr>
