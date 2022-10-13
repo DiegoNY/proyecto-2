@@ -16,7 +16,7 @@
   </div>
   <div class="tablas">
     <div class="tablas-empresa">
-      <table id="empresa" class="table table-striped table-hover" style="width:100%">
+      <table id="empresa" class="table table-bordered border table-hover" style="width:100%">
         <thead>
           <tr>
             <th>Nombre</th>
@@ -43,16 +43,6 @@
           endforeach;
           ?>
         </tbody>
-        <tfoot>
-          <tr>
-            <th>Name</th>
-            <th>Position</th>
-            <th>Office</th>
-            <th>Age</th>
-            <th>Start date</th>
-            <th>Salary</th>
-          </tr>
-        </tfoot>
       </table>
 
 
@@ -60,7 +50,7 @@
 
     <div class="tabla-sucursales">
       <div class="tablas-empresa">
-        <table id="sucursal" class="table table-striped table-hover" style="width:100%">
+        <table id="sucursal" class="table table-bordered border table-hover" style="width:100%">
           <thead>
             <tr>
               <th>Nombre</th>
@@ -74,16 +64,6 @@
           <tbody>
            <!-- Data en Ajax-->
           </tbody>
-          <tfoot>
-            <tr>
-              <th>Name</th>
-              <th>Position</th>
-              <th>Office</th>
-              <th>Age</th>
-              <th>Start date</th>
-              <th>Salary</th>
-            </tr>
-          </tfoot>
         </table>
 
       </div>
@@ -185,16 +165,4 @@
   </div>
 </div>
 
-
-<footer>
-
-</footer>
-
-
-
 <?php include'style/style2.php' ?>
-<script>
-
-
-
-</script>
