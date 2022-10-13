@@ -1,4 +1,7 @@
 <script>
+
+   var tsucursal = '';
+    var tcontacto= '';
     //tabla Prueba
 
 
@@ -15,7 +18,7 @@
         });
     });
     $(document).ready(function() {
-        tsucursal = $('#contactos').DataTable({
+        tcontacto = $('#contactos').DataTable({
             "sAjaxSource": "verContactos.php?ruc=0",
             scrollY: '420px',
             scrollCollapse: true,
@@ -47,8 +50,8 @@
     }
 
     function CargarContactos(ruc) {
-        tcontactos.destroy();
-        tcontactos = $('#contactos').DataTable({
+        tcontacto.destroy();
+        tcontacto = $('#contactos').DataTable({
             "sAjaxSource": "verContactos.php?ruc=" + ruc
         });
     }

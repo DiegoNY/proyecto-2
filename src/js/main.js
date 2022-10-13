@@ -1,5 +1,6 @@
     
     var tsucursal = '';
+    var tcontacto= '';
     //tabla Prueba
     $(document).ready(function() {
         tsucursal = $('#sucursal').DataTable({
@@ -19,7 +20,8 @@
         });
     }
     function EliminarEmpresa(ruc){
-        tsucursal = $('#sucursal').DataTable({
+        tcontacto.destroy();
+        tcontacto = $('#sucursal').DataTable({
             "sAjaxSource":"eliminarSucursal.php?ruc="
         });
     }
