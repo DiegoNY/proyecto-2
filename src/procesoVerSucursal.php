@@ -13,9 +13,8 @@ $ruc = $_GET['ruc'];
  * Consulta
  * */
 $consulta = $bd->query("SELECT s.nombre, s.id_sucursal,s.direccion,s.correo,s.celular,s.ruc_empresa FROM  sucursal2 as s  WHERE s.ruc_empresa = $ruc  and s.eliminada = 1;");
-
 $resultado = $consulta->fetchAll(PDO::FETCH_OBJ);
-    
+
 /**
  * si los datos estan vacios no sigue con el proceso 
  * */

@@ -37,7 +37,7 @@
               <td><?php echo $datos->direccion; ?></td>
               <td><?php echo $datos->razon_social; ?></td>
               <td><?php echo $datos->ruc; ?></td>
-              <td><a href="verEmpresas.php?mensaje=Bienvenido&&ruc=<?php echo $datos->ruc ?>"><i class="bi bi-book text-primary"></i></a></td>
+              <td><i class="bi bi-book text-primary" onclick="CargarSucursal(<?=$datos->ruc ?>)" ></i></td>
               <td>$320,800</td>
             </tr>
           <?php
@@ -108,7 +108,7 @@
 
 </main>
 
-<div class="logins registrar-empresa ">
+<div class="logins registrar-empresa inactive">
   <div>
     <form action="procesoRegistrarEmpresa.php " method="POST" id="form-registrar-empresa" class="form-containers">
       <div class="cont-forms">
@@ -160,7 +160,7 @@
   </div>
 </div>
 
-<div class="logins registrar-sucursal ">
+<div class="logins registrar-sucursal inactive">
   <div>
     <form action="procesoRegistrarSucursal.php " method="POST" class="form-containers">
       <div class="cont-forms">
