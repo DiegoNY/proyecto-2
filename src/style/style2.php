@@ -313,5 +313,11 @@
     width: 100%;
 
   }
+  .img-table{
+
+    height: 50px;
+    width: 50px;
+
+  }
   
 </style>

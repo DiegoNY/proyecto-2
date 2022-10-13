@@ -17,7 +17,7 @@
   </div>
   <div class="tablas">
     <div class="tablas-empresa">
-      <table id="empresa" class="table table-striped table-hover" style="width:100%">
+      <table id="empresa" class="table table-bordered border table-hover" style="width:100%">
         <thead>
           <tr>
             <th>Nombre</th>
@@ -33,27 +33,17 @@
           foreach ($empresas  as $datos) :
           ?>
             <tr>
-              <td><?php echo $datos->nombre ?></td>
-              <td><?php echo $datos->direccion; ?></td>
-              <td><?php echo $datos->razon_social; ?></td>
-              <td><?php echo $datos->ruc; ?></td>
-              <td><a href="verEmpresas.php?mensaje=Bienvenido&&ruc=<?php echo $datos->ruc ?>"><i class="bi bi-book text-primary"></i></a></td>
-              <td>$320,800</td>
+              <td class="border-secondary"><?php echo $datos->nombre ?></td>
+              <td class="border-secondary"><?php echo $datos->direccion; ?></td>
+              <td class="border-secondary"><?php echo $datos->razon_social; ?></td>
+              <td class="border-secondary"><?php echo $datos->ruc; ?></td>
+              <td class="border-secondary text-center"><a href="verEmpresas.php?mensaje=Bienvenido&&ruc=<?php echo $datos->ruc ?>"><img class="img-table" src="img/icons8-bookmark.svg" alt=""></a></td>
+              <td class="border-secondary">$320,800</td>
             </tr>
           <?php
           endforeach;
           ?>
         </tbody>
-        <tfoot>
-          <tr>
-            <th>Name</th>
-            <th>Position</th>
-            <th>Office</th>
-            <th>Age</th>
-            <th>Start date</th>
-            <th>Salary</th>
-          </tr>
-        </tfoot>
       </table>
 
 
@@ -61,7 +51,7 @@
 
     <div class="tabla-sucursales">
       <div class="tablas-empresa">
-        <table id="sucursal" class="table table-striped table-hover" style="width:100%">
+        <table id="sucursal" class="table table-bordered border table-hover" style="width:100%">
           <thead>
             <tr>
               <th>Nombre</th>
@@ -77,29 +67,19 @@
             foreach ($resultado as $data) :
             ?>
               <tr> 
-                <td><?php echo $data->nombre; ?></td>
-                <td><?php echo $data->direccion; ?></td>
-                <td><?php echo $data->ruc_empresa ?></td>
-                <td> Eliminar </td>
+                <td   class="border-secondary"><?php echo $data->nombre; ?></td>
+                <td class="border-secondary"><?php echo $data->direccion; ?></td>
+                <td class="border-secondary"><?php echo $data->ruc_empresa ?></td>
+                <td class="border-secondary text-center"><img src="img/icons8-contact-60.png" class="img-table" alt=""></td>
                 <td scope="row" class="border-secondary text-center"><a href="procesoBorrarSucursal.php?id=<?php echo $datos->id_sucursal ?>&&ruc=<?php $ruc = $_GET['ruc'];
-                                                                                                                                                  echo $ruc; ?>"><img class="img-sucursal-icons" src="img/icons8-delete.svg" alt="delete-icon"></a></td>
+                                                                                                                                                  echo $ruc; ?>"><img class="img-table" src="img/icons8-delete.svg" alt="delete-icon"></a></td>
                  <td scope="row" class="border-secondary text-center"><a href="pantallaEditarSucursal.php?id=<?php echo $datos->id_sucursal ?>&&ruc=<?php $ruc = $_GET['ruc'];
-                                                                                                                                                                                echo $ruc; ?>"><img src="img/icons8-edit (2).svg" alt=""></a></td>
+                                                                                                                                                                                echo $ruc; ?>"><img class="img-table" src="img/icons8-edit (2).svg" alt=""></a></td>
               </tr>
             <?php
             endforeach;
             ?>
           </tbody>
-          <tfoot>
-            <tr>
-              <th>Name</th>
-              <th>Position</th>
-              <th>Office</th>
-              <th>Age</th>
-              <th>Start date</th>
-              <th>Salary</th>
-            </tr>
-          </tfoot>
         </table>
 
       </div>
